@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+     <title>Product landing page</title>
+</head>
+<body>
+     <header class="bg-dark" id="header">
+          <div class="flex container">
+               <div class="title-img">
+                    <img src="images/logo-01.png" alt="Oud logo" id="header-img">
+               </div>
+               <div class="title">
+                    <h1 id="title">Mystical Ouds</h1>
+               </div>
+               <div class="nav">
+                    <nav id="nav-bar">
+                         <ul>
+                              <li><a class="nav-link" href="#showcase">Home</a></li>
+                              <li><a class="nav-link" href="#about">About</a></li>
+                              <li><a class="nav-link" href="#prices">Prices</a></li>
+                         </ul>
+                    </nav>
+               </div>
+          </div>
+     </header>
+
+     <!-- Main/Whole part of page, for pushing down content from behind the header: fixed -->
+
+     <main>
+          <!-- Showcase-form section -->
+     
+          <section class="showcase" id="showcase">
+               <div class="container flex">
+                    <div class="card bg-white">
+                         <div>
+                              <p class="secular-one">Get your custom OUD today!</p>
+                         </div>
+                         <div>
+                              <p>Get in contact:</p>
+                              <form action="https://www.freecodecamp.com/email-submit" id="form">
+                                   <input type="email" placeholder="Type your email here" id="email" class="input" name="email" required>
+                                   <!-- <button type="submit" class="btn btn-primary form-btn" id="submit">Send</button> -->
+                                   <input type="submit" class="btn btn-primary form-bnt" value="Send" id="submit">
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          
+          <!-- About the shop -->
+          
+          <section class="about bg-secondary" id="about">
+               <div class="grid">
+                    <div class="about-img-div">
+                         <img src="images/playing oud.jpg" alt="Playing the oud">
+                    </div>
+                    <div class="about-div">
+                         <h2 class="about-title">What our shop stands for!</h2>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et assumenda quasi voluptates temporibus itaque voluptatum minima eum, esse voluptatibus velit sed explicabo voluptas, incidunt eaque neque inventore beatae nisi quam!</p>
+                    </div>
+               </div>
+          </section>
+          
+          <!-- Video -->
+          <section class="video">
+               <div class="container grid">
+                    <div class="video-alt flex">
+                         <div class="play-vid flex">
+                              <div>
+                                   <i class="fa fa-play fa-2x"></i>
+                              </div>
+                              <div>
+                                   <h1>Play!</h1>
+                              </div>
+                         </div>
+                         <div class="play-text text-center">
+                              <h2>Feel the Beauty and the Power of the Oud</h2>
+                         </div>
+                    </div>
+                    <div class="video-div">
+                         <div class="card">
+                              <iframe 
+                              id="video" 
+                              width="860" height="484" 
+                              src="https://www.youtube.com/embed/tGCqu7ZKdwk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              allowfullscreen></iframe>
+                              <p class="secular-one">Arabic OUD Taqsim Hesham Hamra</p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <!-- Prices -->
+          <section class="prices bg-primary" id="prices">
+               <div class="flex">
+                    <div class="card flex bg-white">
+                         <div>
+                              <h1>Basic Wooden Handmade</h1>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perspiciatis quod laborum accusantium repellat tempora magnam odio hic exercitationem? Perspiciatis.</p>
+                         </div>
+                         <div>
+                              <h1 class="btn btn-primary text-center">$600</h1>
+                         </div>
+                    </div>
+                    <div class="card flex bg-white">
+                         <div>
+                              <h1>Traditional Arabic Handmade</h1>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perspiciatis quod laborum accusantium repellat tempora magnam odio hic exercitationem? Perspiciatis.</p>
+                         </div>
+                         <div>
+                              <h1 class="btn btn-primary text-center">$900</h1>
+                         </div>
+                    </div>
+                    <div class="card flex bg-white">
+                         <div>
+                              <h1>Special Arabesque Decorated Handmade</h1>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perspiciatis quod laborum accusantium repellat tempora magnam odio hic exercitationem? Perspiciatis.</p>
+                         </div>
+                         <div>
+                              <h1 class="btn btn-primary text-center">$1100</h1>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <footer class="footer bg-dark">
+               <div class="container grid">
+                    <div class="footer-nav">
+                         <ul>
+                              <h1>Mysical Ouds</h1>
+                              <li><a class="nav-link" href="#showcase">Home</a></li>
+                              <li><a class="nav-link" href="#about">About</a></li>
+                              <li><a class="nav-link" href="#prices">Prices</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-img">
+                         <img src="images/logo-01.png" alt="Oud logo">
+                    </div>
+               </div>
+          </footer>
+<!--           < Test for fixed header 
+          <section style="height: 1000000px;">               
+          </section> -->
+     </main>
+
+
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
