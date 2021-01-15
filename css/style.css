@@ -52,6 +52,7 @@ i {
 .container {
      max-width: 1100px;
      margin: 0 auto;
+     padding: 0 1.25rem;
 }
 
 /* Backgrounds */
@@ -184,6 +185,34 @@ header nav ul :not(:first-child) {
 header .nav li:hover {
      color: var(--light-color);
      border-bottom: 4px solid var(--primary-color);
+}
+
+.hamburger-menu {
+     flex-direction:column;
+     cursor:pointer;
+     display: none;
+}
+
+.hamburger-menu span{
+     background-color: var(--secondary-color);
+     width: 20px;
+     height: 2px;
+     margin: 2px 0;
+     display: block;
+     transition: all .4s ease;
+     transform-origin: 0 0;
+   }
+
+.showx span:nth-child(1) {
+     transform: rotate(45deg) translate(0px, -2px);
+}
+   
+.showx span:nth-child(2) {
+     transform: scaleX(0);
+}
+   
+.showx span:nth-child(3) {
+     transform: rotate(-45deg) translate(0px, 0px);
 }
 
 /* Showcase */
@@ -326,4 +355,18 @@ header .nav li:hover {
 
 .footer .footer-img img {
      max-width: 100%;
+}
+
+/* Media query for showcase background */
+@media(max-width: 965px) {
+     .showcase {
+          background-size: contain;
+     }
+}
+
+/* Hamburger menu */
+@media(max-width: 825px) {
+     .hamburger-menu {
+          display: inline-block;
+     }
 }
