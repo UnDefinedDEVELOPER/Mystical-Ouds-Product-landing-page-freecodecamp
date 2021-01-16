@@ -55,6 +55,14 @@ i {
      padding: 0 1.25rem;
 }
 
+.hide {
+     display: none;
+}
+
+.invisible {
+     visibility: hidden;
+}
+
 /* Backgrounds */
 .bg-primary {
      background-color: var(--primary-color);
@@ -190,7 +198,6 @@ header .nav li:hover {
 .hamburger-menu {
      flex-direction:column;
      cursor:pointer;
-     display: none;
 }
 
 .hamburger-menu span{
@@ -366,7 +373,5 @@ header .nav li:hover {
 
 /* Hamburger menu */
 @media(max-width: 825px) {
-     .hamburger-menu {
-          display: inline-block;
-     }
+     
 }
